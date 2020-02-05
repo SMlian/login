@@ -1,0 +1,89 @@
+html,body{
+	background: #fff;
+	font-family: "微软雅黑";
+}
+
+#box{
+	width:300px;
+	min-height:315px;
+	border:1px solid black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+#box input{
+	border: 1px solid #ccc;
+	background: #fff;
+}
+#box>h1{
+	margin: 15px 0 35px 0;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+#box p>input{
+	width: 250px;
+	height: 35px;
+	padding:0 10px;
+	border-radius: 3px;
+	background:none;
+	color:#adadad;
+}
+#box>input{
+	height: 25px;
+	margin:15px 0;
+}
+#box p + input{
+	transform: translateX(9px);
+	cursor: pointer;
+	color: lightskyblue;
+	border-radius: 3px;
+	border-color: lightskyblue;
+	padding: 3px;
+	width:95%;
+	height: 35px;
+}
+#box p{position: relative;margin: 10px;}
+#box h1 + p{
+	margin-bottom: 20px;
+}
+
+#box p>span::before{
+	content: attr(data-value);
+	color: #ccc;
+	position: absolute;
+	left: 5px;
+	top:20%;
+	z-index: -1;
+}
+#box>input + p{
+	border-top: 2px solid skyblue;
+	text-align: left;
+	padding: 5px;
+	margin: 0 10px 10px 10px;
+	transform: translateY(10px);
+}
+#box p>a{
+	display: inline-block;
+	color: skyblue;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+#box .active{
+	color: #fff;
+	background: lightskyblue;
+	display: inline-block;
+}
+
+
+
+
+
+
+
